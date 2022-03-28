@@ -28,5 +28,8 @@ Creating new products (and in general, any operation that involves a user fillin
     GET -- Navigate to the page that shows the form for creating a new product
     POST -- Fill out and submit the form
 
+For this, and the ShowProductsServelt, the servlet does not access the DAO directly; instead, it goes through the factory to access the DAO object. In this way, the servlet only ever knows about the Products interface, and if we were to swap out the implementation of the class, we would not need to make any changes to our controller code.
+
 ### create.jsp
 The View for creating products
+
