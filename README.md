@@ -23,6 +23,10 @@ The View for viewing products
 
 ### CreateProductServlet.java
 The Controller for creating products
+Creating new products (and in general, any operation that involves a user filling out a form) involves two separate HTTP requests:
+
+    GET -- Navigate to the page that shows the form for creating a new product
+    POST -- Fill out and submit the form
 
 ### create.jsp
 The View for creating products
