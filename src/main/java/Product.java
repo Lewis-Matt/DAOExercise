@@ -1,5 +1,5 @@
-
 // TODO: This class represents the MODEL
+
 public class Product {
     private String name;
     private double price;
