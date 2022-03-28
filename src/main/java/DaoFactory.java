@@ -3,6 +3,7 @@
 public class DaoFactory {
     private static Products productsDao;
 
+    // The first time getProductsDao is called, an instance of ListProducts is created, stored as a class property, and returned from the method. Every other time after the first time getProductsDao is called, a new object does not need to be instantiated, the existing one will be re-used.
     public static Products getProductsDao() {
         if (productsDao == null) {
             productsDao = new ListProducts();
