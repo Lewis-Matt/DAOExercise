@@ -1,4 +1,4 @@
-// TODO: This interface describes the operations that our app can perform with products
+// TODO: This DAO interface describes the operations that our app can perform with products
 
 import java.util.List;
 
