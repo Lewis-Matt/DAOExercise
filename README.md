@@ -1,6 +1,8 @@
 # DAOExercise
 An example application to show us a list of products, and allow the user to add a new product. For now, I am "faking" the database interaction functionality by writing a class that reads from and writes to an ArrayList.
 
+We'll have two servlets (controllers) and two JSPs (views) for the two separate actions in our application: viewing all the products, and adding a new product.
+
 ### Product.java
 The Model
 
