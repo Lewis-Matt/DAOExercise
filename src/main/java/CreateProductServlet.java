@@ -16,6 +16,7 @@ public class CreateProductServlet extends HttpServlet {
     @Override
     // Access the values the user submitted, and use those values to create a new Product object
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // The servlet does not access the DAO directly; instead, it goes through the factory to access the DAO object
         Products productsDao = DaoFactory.getProductsDao();
         // Create a new product based upon submitted data
         String name = request.getParameter("name");
